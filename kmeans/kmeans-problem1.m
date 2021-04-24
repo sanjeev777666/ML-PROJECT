@@ -1,4 +1,4 @@
-clc
+clc;
 close all
 x=load('kmeans_datasetX.m');
 y=load('kmeans_datasetY.m');
@@ -75,4 +75,7 @@ for i=1:length(k2x)
     scatter(x,y,'b');
     hold on;
     grid on;
+    xlabel('x')
+    ylabel('y')
+    legend('kmeans')
 end
